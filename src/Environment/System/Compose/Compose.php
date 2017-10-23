@@ -49,7 +49,8 @@ class Compose extends Command
             Config::CONFIG_DIR . self::FILE,
             '-p',
             $this->_networkName,
-            'up'
+            'up',
+            '-d'
         ];
 
         if ($build) {
